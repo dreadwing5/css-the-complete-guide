@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -22,12 +23,8 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
-  /* padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
-  /* height: 80px; */
+
 }
 
 nav {
@@ -35,9 +32,9 @@ nav {
   /* text-align: center; */
 }
 
-article {
+/* article {
   margin-bottom: 60px;
-}
+} */
 
 .post-header {
   margin-bottom: 40px;
@@ -50,8 +47,7 @@ aside {
   border-bottom: 5px solid #1098ad;
   /* padding-top: 50px;
   padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 /* SMALLER ELEMENTS */
@@ -132,8 +128,12 @@ li:last-child {
   list-style: none;
 } */
 
+aside > h4{
+  margin-bottom: 40px;
+}
 .related {
   list-style: none;
+  margin:0;
 }
 
 body {
@@ -294,7 +294,9 @@ nav p {
   margin-bottom: 30px;
 }
 
-article{
+/* Flexbox Layout */
+
+/* article{
   flex:1;
   margin-bottom: 0;
 }
@@ -308,6 +310,34 @@ article{
 aside{
   flex : 0 0 300px;
 
+} */
+
+
+/* CSS GRID LAYOUT */
+
+.container{
+  display : grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
 }
 
+.main-header{
+  grid-column : 1 /-1;
+  
+
+}
+
+article{
+
+}
+
+
+
+footer{
+  /* background-color: khaki; */
+  grid-column : 1 /-1;
+
+}
 
