@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 90%;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -183,23 +183,15 @@ a:active {
   font-style: italic;
 }
 
-/* LVHA */
 
+nav a{
+  margin-right: 20px;
+}
+/* LVHA */
+ 
 .post-img {
   width: 100%;
   height: auto;
-}
-
-nav a:link {
-  /* background-color: orangered;
-  margin: 20px;
-  padding: 20px;
-
-  display: block; */
-
-  margin-right: 30px;
-  margin-top: 10px;
-  display: inline-block;
 }
 
 nav a:link:last-child {
@@ -221,10 +213,6 @@ button {
 h1::first-letter {
   font-style: normal;
   margin-right: 5px;
-}
-
-h3+p::first-line {
-  /* color: red; */
 }
 
 h2 {
@@ -266,3 +254,60 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+
+/* FlexBox */
+
+.main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.related-author{
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+.related-link:link{
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.related-post{
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+article{
+  flex:1;
+  margin-bottom: 0;
+}
+.row{
+  display: flex;
+  gap: 30px;  
+  margin-bottom: 56px;
+  align-items: flex-start;
+}
+
+aside{
+  flex : 0 0 300px;
+
+}
+
+
