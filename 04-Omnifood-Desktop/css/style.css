@@ -62,6 +62,32 @@ body {
 
 /* ********************* */
 /* GENERAL REUSABLE COMPONENTS */
+/* ********************* */
+
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 9.6rem;
+
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 
 .heading-primary {
     font-size: 5.2rem;
@@ -118,8 +144,10 @@ body {
     margin-right: 1.6rem !important;
 }
 
+
 /* ********************* */
 /* HEADER */
+/* ********************* */
 
 .header {
     display: flex;
@@ -138,6 +166,7 @@ body {
 
 /* ********************* */
 /* NAVIGATION */
+/* ********************* */
 
 .main-nav-list {
     list-style: none;
@@ -182,11 +211,14 @@ body {
 
 /* ********************* */
 /* HERO COMPONENTS */
+/* ********************* */
 
 .section-hero {
     background-color: #fdf2e9;
     padding: 4.8rem 0 9.6rem 0;
 }
+
+
 
 .hero {
     display: grid;
@@ -212,8 +244,6 @@ body {
 .hero-img {
     width: 100%;
 }
-
-
 
 .delivered-meals {
     display: flex;
@@ -247,3 +277,7 @@ body {
     color: #cf711f;
     font-weight: 700;
 }
+
+/* ********************* */
+/* HOW IT WORKS SECTION */
+/* ********************* */
