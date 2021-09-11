@@ -28,7 +28,10 @@ Paragraph default : 1.6
 #45260a
 - Shades : #cf711f;
 - Accents :
-- Greys 
+- Greys
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9 ) 
 #555
 #333
 
