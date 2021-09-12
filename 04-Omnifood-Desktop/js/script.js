@@ -42,7 +42,26 @@ body.addEventListener('click', function(e){
 })
 
 
+////////////////////////////////////////////////////////////
 
+//Sticky navigation
+
+const sectionHeroEl = document.querySelector('.section-hero');
+const observer = new IntersectionObserver(function(entries){
+  const ent = entries[0];
+if(ent.isIntersecting)
+ document.body.classList.remove('sticky');
+else
+  document.body.classList.add('sticky');
+},
+{
+  //In the viewport
+  root: null, 
+  threshold:0,
+  rootMargin: '-80px'
+})
+
+observer.observe(sectionHeroEl);
 
 
 
