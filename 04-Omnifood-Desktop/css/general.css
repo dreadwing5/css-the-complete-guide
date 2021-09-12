@@ -67,6 +67,7 @@ Default : 9px
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    /* scroll-behavior: smooth; */
 }
 
 body {
@@ -77,6 +78,7 @@ body {
 
     /* Only works if there is nothing absolutely  positioned in relation to body  */
     overflow-x: hidden;
+
 }
 
 /* ********************* */
@@ -263,12 +265,23 @@ body {
     color: #e67e22;
 }
 
-*:focus {
+
+
+
+*:focus-visible {
     outline: none;
     /* outline: 4px dotted #e67e22; */
     /* outline-offset: 8px; */
 
     box-shadow: 0 0 0 0.6rem rgba(230, 125, 34, 0.507);
+}
+
+
+
+*:focus:not(:focus-visible) {
+    /* Remove the focus indicator on mouse-focus for browsers
+       that do support :focus-visible */
+    background: transparent;
 }
 
 /* HELPER CLASSES */
