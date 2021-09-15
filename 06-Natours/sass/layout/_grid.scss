@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  column-gap: $gutter-horizontal;
+  color: $color-white;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+}
+
+.grid-center {
+  text-align: center;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col-1-of-2,
+.col-1-of-3,
+.col-1-of-4 {
+  grid-column: span 1;
+}
+
+.col-2-of-3,
+.col-2-of-4 {
+  grid-column: span 2;
+}
+
+.col-3-of-4 {
+  grid-column: span 3;
+}

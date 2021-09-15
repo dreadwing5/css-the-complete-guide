@@ -9,12 +9,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
 
 @keyframes moveInLeft {
   from {
@@ -43,6 +39,12 @@ body {
   to {
     opacity: 1;
     transform: translateY(0); } }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -126,3 +128,34 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.grid {
+  display: grid;
+  column-gap: 6rem;
+  color: #fff; }
+  .grid:not(:last-child) {
+    margin-bottom: 8rem; }
+
+.grid-center {
+  text-align: center; }
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr); }
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr); }
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr); }
+
+.col-1-of-2,
+.col-1-of-3,
+.col-1-of-4 {
+  grid-column: span 1; }
+
+.col-2-of-3,
+.col-2-of-4 {
+  grid-column: span 2; }
+
+.col-3-of-4 {
+  grid-column: span 3; }
