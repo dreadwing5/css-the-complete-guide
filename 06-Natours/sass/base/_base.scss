@@ -14,4 +14,10 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
+  letter-spacing: 1;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
 }

@@ -1,15 +1,10 @@
 .grid {
   display: grid;
   column-gap: $gutter-horizontal;
-  color: $color-white;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
-}
-
-.grid-center {
-  text-align: center;
 }
 
 .grid-cols-2 {
