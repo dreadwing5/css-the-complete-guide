@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-.u-margin-bottom-large {
-  margin-bottom: 8rem;
+.u-margin-bottom-large:not(:last-child) {
+  margin-bottom: 8rem !important;
 }
 
 .u-margin-bottom-medium {
