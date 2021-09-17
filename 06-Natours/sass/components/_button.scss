@@ -1,6 +1,7 @@
 // @import "../abstracts/variables";
 
 .btn {
+  &,
   &:link,
   &:visited {
     font-size: $default-font-size;
@@ -10,6 +11,10 @@
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
+
+    //Change for the <button> ::-webkit-progress-inner-element
+    border: none;
+    cursor: pointer;
   }
 
   &::after {
@@ -35,7 +40,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-1rem);
     box-shadow: 0 0.5rem 0.1rem rgba($color-black, 0.2);
   }
