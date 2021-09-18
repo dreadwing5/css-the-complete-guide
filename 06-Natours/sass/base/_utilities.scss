@@ -4,23 +4,35 @@
 
 .u-margin-bottom-large:not(:last-child) {
   margin-bottom: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 6rem !important;
+  }
 }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
 }
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }
+
 .u-margin-center {
   margin: 0 9.8rem !important;
 }
+
 .u-margin-top-sm {
   margin-top: 1.5rem !important;
 }
+
 .u-margin-top-xl {
   margin-top: 10rem !important;
 }
+
 .u-margin-top-lg {
   margin-top: 8rem !important;
 }
@@ -29,4 +41,12 @@
   padding: 0 15rem;
   margin: 0 auto;
   border-radius: 3px;
+
+  @include respond(tab-port) {
+    padding: 0 8rem;
+  }
+
+  @include respond(phone) {
+    padding: 0 4rem;
+  }
 }

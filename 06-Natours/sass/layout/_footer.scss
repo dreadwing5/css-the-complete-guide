@@ -3,6 +3,11 @@
   padding: 15rem 0;
   font-size: 1.4rem;
   color: $color-grey-light-1;
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
 
   &__logo-box {
     text-align: center;
@@ -47,5 +52,10 @@
     padding-top: 2rem;
     width: 80%;
     float: right;
+
+    @include respond(tab-port) {
+      float: none;
+      width: 95%;
+    }
   }
 }
