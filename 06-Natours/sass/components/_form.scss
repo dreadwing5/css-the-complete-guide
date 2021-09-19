@@ -6,6 +6,9 @@
   &__group-radio {
     display: flex;
     gap: 2rem;
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__input {
